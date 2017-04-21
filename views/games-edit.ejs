@@ -3,12 +3,16 @@
 
 
 
-<form id="edit-game" action="<%= '/game/' + name %>" method="PUT">
+<form id="edit-game" action="<%= '/game/' + game.name %>" method="PUT">
   <label for="name">Name:</label>
-  <input name="name" type="text" value="<%= name %>">
+  <input name="name" type="text" value="<%= game.name %>">
 
   <label for="description">Description:</label>
-  <textarea name="description" cols="30" rows="10"><%= description %></textarea>
+  <textarea name="description" cols="30" rows="10"><%= game.description %></textarea>
+
+	<label for="numberOfPlayers">Number of players:</label>
+  <input name="numberOfPlayers" type="text" value="<%= game.numberOfPlayers %>">
+
 
   <input type="submit" value="Edit game!">
 </form>

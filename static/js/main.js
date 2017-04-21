@@ -39,6 +39,7 @@ $(function() {
             url: url,
             method: 'DELETE'
         }).done(function() {
+            console.log('ajax delete done')
             window.location = '/';
         });
     });
